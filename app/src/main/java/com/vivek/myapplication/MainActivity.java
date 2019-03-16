@@ -3,6 +3,7 @@ package com.vivek.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.motion.widget.MotionLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -46,5 +47,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void start(View view) {
 //        motionLayout.transitionToEnd();
+        startActivity(new Intent(this, MotionLayoutActivity.class));
     }
 }

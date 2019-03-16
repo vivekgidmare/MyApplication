@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition
+        android:id="@+id/email_send_transition"
+        app:constraintSetEnd="@id/email_ending_set"
+        app:constraintSetStart="@id/email_starting_set"
+        app:duration="2000">
+        <!--<OnClick-->
+            <!--app:clickAction="transitionToEnd"-->
+            <!--app:target="@id/actor" />-->
+
+
+        <KeyFrameSet android:id="@+id/my_keys">
+
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/email_starting_set">
+
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/email_ending_set">
+
+    </ConstraintSet>
+
+
+</MotionScene>

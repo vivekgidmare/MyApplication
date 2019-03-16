@@ -19,7 +19,8 @@
                 app:framePosition="10"
                 app:keyPositionType="deltaRelative"
                 app:percentX="0.9"
-                app:target="@id/actor" />
+                app:target="@id/actor"
+                app:transitionEasing="accelerate" />
 
             <KeyPosition
                 app:framePosition="30"
@@ -43,14 +44,22 @@
                 app:framePosition="90"
                 app:keyPositionType="deltaRelative"
                 app:percentX="0.9"
-                app:target="@id/actor" />
-
+                app:target="@id/actor"
+                app:transitionEasing="decelerate" />
             <KeyCycle
                 android:rotation="50"
                 app:framePosition="30"
                 app:target="@id/actor"
                 app:wavePeriod="1"
                 app:waveShape="sin" />
+
+            <KeyAttribute
+                android:rotation="-45"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:transitionEasing="decelerate"
+                app:framePosition="50"
+                app:target="@id/button" />
         </KeyFrameSet>
     </Transition>
 
@@ -62,8 +71,8 @@
             android:layout_height="150dp"
             app:layout_constraintTop_toTopOf="parent">
             <!--<CustomAttribute-->
-                <!--app:attributeName="crossfade"-->
-                <!--app:customFloatValue="0" />-->
+            <!--app:attributeName="crossfade"-->
+            <!--app:customFloatValue="0" />-->
             <CustomAttribute
                 app:attributeName="saturation"
                 app:customFloatValue="1" />
@@ -104,8 +113,8 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <!--<CustomAttribute-->
-                <!--app:attributeName="crossfade"-->
-                <!--app:customFloatValue="1" />-->
+            <!--app:attributeName="crossfade"-->
+            <!--app:customFloatValue="1" />-->
             <CustomAttribute
                 app:attributeName="saturation"
                 app:customFloatValue="0" />
@@ -114,8 +123,8 @@
 
         <Constraint
             android:id="@id/actor"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image_banner">
             <CustomAttribute

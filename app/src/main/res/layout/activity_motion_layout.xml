@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    motion:layoutDescription="@xml/motion_key_frames_01"
+    motion:showPaths="true"
+    tools:context=".MotionLayoutActivity">
+
+    <ImageView
+        android:id="@+id/img_key_frame"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="keyframe" />
+
+
+    <ImageView
+        android:id="@+id/image_send"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/circular_bg"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:srcCompat="@drawable/ic_send_black_24dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
